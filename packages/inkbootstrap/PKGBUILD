@@ -1,10 +1,18 @@
-pkgname="inkbootstrap"
-pkgrel=1
-arch=(any)
-makedepends=('cargo')
-pkgver=0.1.1
-url="https://github.com/sufremoak/inkos-source"
+pkgname=inkbootstrap
+pkgver=0.1.2
+pkgrel=2
+pkgdesc="Build and install InkOS bundles."
+arch=('x86_64')
+license=('MIT')
+depends=('tar')
+makedepends=('rust' 'cargo')
+# DO NOT define 'source' or 'md5sums'
 
 build() {
-	cargo build --release
+    echo ">> Building $pkgname v$pkgver"
+    cargo build --release
+}
+
+package() {
+   sudo cp -r ../target/release/$pkgname /usr/bin/$pkgname
 }
