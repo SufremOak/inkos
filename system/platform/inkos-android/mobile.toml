@@ -1,0 +1,5 @@
+[app]
+name = "inkos-android"
+stylized-name = "InkOS For Android"
+domain = "com.oakymac.inkos.shell"
+template-pack = "wgpu"
