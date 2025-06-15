@@ -51,7 +51,12 @@ esac
 nsol() {
     nsol-init() {
         echo "[*] NSOL is now starting..."
-        
+        echo "[i] Checking if a standalone binary is available..."
+        if [ -f "nsol.bin" ]; then
+            exec ./nsol.bin
+        else
+            echo "no executable found"
+        fi
     }
 }
 

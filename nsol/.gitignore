@@ -1,0 +1,27 @@
+# NSOL kernel build artifacts
+*.o
+*.bin
+*.elf
+*.img
+*.iso
+*.map
+
+# OS-specific clutter
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+tmp/
+
+# Built outputs
+target/
+bootable_nsol.bin
+lazyness_*
