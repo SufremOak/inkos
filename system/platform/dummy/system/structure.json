@@ -1,0 +1,17 @@
+{
+    "root": "/",
+    "home": {
+        "#inkos": {
+            "system": {
+                "bin": {
+                    "os.Bins": ["unix.bash", "winnt.Exec"]
+                },
+                "clicks": {
+                    "os.Contents": ["inkos.jpg", "views"]
+                }
+            },
+            "meta.inkos": "$device.Metadata"
+        },
+        "applcations": "$userApps"
+    }
+}
